@@ -3,7 +3,7 @@ const cors = require('cors')
 const app = express()
 
 const beansRouter = require('./routes/beans')
-const PORT = 80
+const PORT = 3000
 
 
 app.use(cors())
