@@ -1,16 +1,10 @@
-
 {
-    "version": 2,
-    "name": "nodejs-express",
-    "builds": [
-        { "src": "app.js", "use": "@now/node" }
-    ],
- "routes": [
+  "routes": [
     { "src": "/", "dest": "/app.js" },
-    { "src": "/api", "dest": "/" }
-    { "src": "/api/beans", "dest": "/" }
- ]
+    { "src": "/api/beans", "dest": "/app.js" }
+    { "src": "/api", "dest": "/app.js" }
 
+  ]
 }
 
 
