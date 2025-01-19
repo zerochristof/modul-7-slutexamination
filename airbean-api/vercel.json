@@ -1,6 +1,4 @@
-{ "version": 2, "rewrites": [{ "source": "/(.*)", "destination": "/app.js" }],"rewrites": [
-        { "source": "/api/beans", "dest": "app.js" }
-    ] }
-
-
+{
+  "routes": [{ "src": "/[^.]+", "dest": "/", "status": 200 }]
+}
 
