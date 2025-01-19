@@ -9,6 +9,7 @@
     { "src": "/", "dest": "/app.js" },
     { "src": "/api", "dest": "/" }
     { "src": "/api/beans", "dest": "/" }
+ ]
 
 }
 
