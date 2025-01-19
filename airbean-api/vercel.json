@@ -7,11 +7,10 @@
     }
   ],
 
-  "rewrites": [
+"routes": [
     {
-      "source": "/((?!api/.*).*)",
-      "destination": "/app.js","source": "/api/beans",
-      "destination": "/app.js"
+      "src": "/[^.]+",
+      "dest": "/app.js"
     }
   ]
 }
