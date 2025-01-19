@@ -1,8 +1,14 @@
-const express = require("express");
-const app = express();
+const express = require('express')
+const cors = require('cors')
+const app = express()
 
-app.get("/", (req, res) => res.send("Express on Vercel"));
+const beansRouter = require('./routes/beans')
+const PORT = 80
 
-app.listen(3000, () => console.log("Server ready on port 3000."));
 
-module.exports = app;
+app.use(cors())
+app.use(express.json())
+app.use('/api/beans', beansRouter)
+
+
+app.listen(PORT, () => console.log(`Server started on port ${PORT}`))
