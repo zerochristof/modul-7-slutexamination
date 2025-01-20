@@ -7,8 +7,6 @@
     ],
     "routes": [
         { "src": "/[^.]+", "dest": "/app.js" },
-    { "src": "/api", "dest": "/app.js" },
-    { "src": "/api/beans", "dest": "/app.js" },
-    { "src": "/status", "dest": "/app.js" }
+    { "src": "/api/beans", "dest": "/app.js" }
     ]
 }
