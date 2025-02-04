@@ -29,7 +29,7 @@ function Cart() {
   let Submit = async (e) => {
     e.preventDefault();
     try {
-      let res = await fetch("http://localhost:5000/api/beans", { method: "POST" });
+      let res = await fetch("https://christoffer.zarc.se/beans/api.php/api/beans", { method: "POST" });
       let resJson = await res.json();
       let eta = resJson.eta;
       let orderNr = resJson.orderNr;
