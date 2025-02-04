@@ -16,7 +16,7 @@ function Menu() {
   let [cartN, setCartN] = useState(0);
   useEffect(() => {
     async function getItems() {
-      const response = await fetch("http://localhost:5000/api/beans");
+      const response = await fetch("https://christoffer.zarc.se/beans/api.php/api/order");
       const data = await response.json();
       dispatch(addAllItems(data.menu));
     }
